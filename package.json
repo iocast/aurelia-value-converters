@@ -67,6 +67,9 @@
     "directories": {
       "dist": "dist/amd"
     },
+    "peerDependencies": {
+      "@iocast/array-utilities": "0.0.2"
+    },
     "dependencies": {
       "@iocast/array-utilities": "0.0.2"
     },
