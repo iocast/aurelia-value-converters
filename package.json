@@ -1,6 +1,6 @@
 {
   "name": "@iocast/aurelia-value-converters",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A colletion of value converters",
   "keywords": [
     "aurelia",
@@ -68,10 +68,10 @@
       "dist": "dist/amd"
     },
     "peerDependencies": {
-      "@iocast/array-utilities": "0.0.2"
+      "@iocast/array-utilities": "0.0.3"
     },
     "dependencies": {
-      "@iocast/array-utilities": "0.0.2"
+      "@iocast/array-utilities": "0.0.3"
     },
     "devDependencies": {
       "aurelia-polyfills": "^1.0.0"
