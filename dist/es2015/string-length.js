@@ -4,5 +4,4 @@ export let StringLengthValueConverter = class StringLengthValueConverter {
     if (paragraph.length <= characters) return paragraph;
     return `${paragraph.substring(0, characters - 4)} ...`;
   }
-
 };

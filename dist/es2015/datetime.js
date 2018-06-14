@@ -41,5 +41,4 @@ export let DatetimeValueConverter = class DatetimeValueConverter {
     }
     return dDate.toLocaleDateString(locales, options);
   }
-
 };

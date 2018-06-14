@@ -7,8 +7,6 @@
  *   <pre></pre>
  */
 export class DatetimeValueConverter {
-
-
   longFormat = {
     weekday: 'long',
     year: 'numeric',
@@ -60,5 +58,4 @@ export class DatetimeValueConverter {
     if (time) { return dDate.toLocaleTimeString(locales, options); }
     return dDate.toLocaleDateString(locales, options);
   }
-
 }

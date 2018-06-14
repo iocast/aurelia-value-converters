@@ -10,7 +10,6 @@ import { filter } from '@iocast/array-utilities';
  *   <pre><div repeat.for="nav of router.navigation | filter:'settings.step':filterFuncOnController.bind($this)">...</div></pre>
  */
 export class FilterValueConverter {
-
   /**
    * To View Method
    *
@@ -24,5 +23,4 @@ export class FilterValueConverter {
   toView(items, property, filterFunc) {
     return filter(items, property, filterFunc);
   }
-
 }
