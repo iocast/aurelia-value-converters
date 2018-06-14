@@ -1,4 +1,4 @@
-define(['exports', '@iocast/array-utilities/dist/native-modules'], function (exports, _nativeModules) {
+define(['exports', '@iocast/array-utilities'], function (exports, _arrayUtilities) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -18,7 +18,7 @@ define(['exports', '@iocast/array-utilities/dist/native-modules'], function (exp
     }
 
     SortValueConverter.prototype.toView = function toView(array, property, direction) {
-      return (0, _nativeModules.sort)(array, property, direction);
+      return (0, _arrayUtilities.sort)(array, property, direction);
     };
 
     return SortValueConverter;

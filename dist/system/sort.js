@@ -1,6 +1,6 @@
 'use strict';
 
-System.register(['@iocast/array-utilities/dist/native-modules'], function (_export, _context) {
+System.register(['@iocast/array-utilities'], function (_export, _context) {
   "use strict";
 
   var sort, SortValueConverter;
@@ -12,8 +12,8 @@ System.register(['@iocast/array-utilities/dist/native-modules'], function (_expo
   }
 
   return {
-    setters: [function (_iocastArrayUtilitiesDistNativeModules) {
-      sort = _iocastArrayUtilitiesDistNativeModules.sort;
+    setters: [function (_iocastArrayUtilities) {
+      sort = _iocastArrayUtilities.sort;
     }],
     execute: function () {
       _export('SortValueConverter', SortValueConverter = function () {

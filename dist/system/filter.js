@@ -1,6 +1,6 @@
 'use strict';
 
-System.register(['@iocast/array-utilities/dist/native-modules'], function (_export, _context) {
+System.register(['@iocast/array-utilities'], function (_export, _context) {
   "use strict";
 
   var filter, FilterValueConverter;
@@ -12,8 +12,8 @@ System.register(['@iocast/array-utilities/dist/native-modules'], function (_expo
   }
 
   return {
-    setters: [function (_iocastArrayUtilitiesDistNativeModules) {
-      filter = _iocastArrayUtilitiesDistNativeModules.filter;
+    setters: [function (_iocastArrayUtilities) {
+      filter = _iocastArrayUtilities.filter;
     }],
     execute: function () {
       _export('FilterValueConverter', FilterValueConverter = function () {

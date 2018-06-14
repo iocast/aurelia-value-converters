@@ -1,4 +1,4 @@
-import { filter } from '@iocast/array-utilities/dist/native-modules';
+import { filter } from '@iocast/array-utilities';
 
 export let FilterValueConverter = class FilterValueConverter {
   toView(items, property, filterFunc) {

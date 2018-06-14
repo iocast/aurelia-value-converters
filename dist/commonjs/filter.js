@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.FilterValueConverter = undefined;
 
-var _nativeModules = require('@iocast/array-utilities/dist/native-modules');
+var _arrayUtilities = require('@iocast/array-utilities');
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -15,7 +15,7 @@ var FilterValueConverter = exports.FilterValueConverter = function () {
   }
 
   FilterValueConverter.prototype.toView = function toView(items, property, filterFunc) {
-    return (0, _nativeModules.filter)(items, property, filterFunc);
+    return (0, _arrayUtilities.filter)(items, property, filterFunc);
   };
 
   return FilterValueConverter;

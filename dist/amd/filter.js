@@ -1,4 +1,4 @@
-define(['exports', '@iocast/array-utilities/dist/native-modules'], function (exports, _nativeModules) {
+define(['exports', '@iocast/array-utilities'], function (exports, _arrayUtilities) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -18,7 +18,7 @@ define(['exports', '@iocast/array-utilities/dist/native-modules'], function (exp
     }
 
     FilterValueConverter.prototype.toView = function toView(items, property, filterFunc) {
-      return (0, _nativeModules.filter)(items, property, filterFunc);
+      return (0, _arrayUtilities.filter)(items, property, filterFunc);
     };
 
     return FilterValueConverter;
