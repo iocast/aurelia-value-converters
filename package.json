@@ -24,6 +24,9 @@
     "type": "git",
     "url": "http://github.com/iocast/aurelia-value-converters"
   },
+  "dependencies": {
+    "@iocast/array-utilities": "0.0.2"
+  },
   "devDependencies": {
     "aurelia-tools": "^1.0.0",
     "babel-eslint": "^7.1.1",
@@ -64,11 +67,11 @@
     "directories": {
       "dist": "dist/amd"
     },
+    "dependencies": {
+      "@iocast/array-utilities": "0.0.2"
+    },
     "devDependencies": {
       "aurelia-polyfills": "^1.0.0"
     }
-  },
-  "dependencies": {
-    "@iocast/array-utilities": "0.0.2"
   }
 }
