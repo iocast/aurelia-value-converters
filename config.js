@@ -12,6 +12,6 @@ System.config({
     'npm:aurelia-polyfills@1.0.0': {
       'aurelia-pal': 'npm:aurelia-pal@1.0.0'
     },
-    '@iocast/array-utilities': '@iocast/array-utilities@0.0.3'
+    '@iocast/array-utilities': '@iocast/array-utilities@0.0.4'
   }
 });
