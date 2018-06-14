@@ -1,4 +1,4 @@
-import { sort } from '@iocast/array-utilities/dist/native-modules';
+import { sort } from '@iocast/array-utilities';
 
 /**
  * Sort array value converter

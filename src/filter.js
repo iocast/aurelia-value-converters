@@ -1,4 +1,4 @@
-import { filter } from '@iocast/array-utilities/dist/native-modules';
+import { filter } from '@iocast/array-utilities';
 
 /**
  * Filter array value converter
