@@ -38,13 +38,13 @@ export class DatetimeValueConverter {
 
     if (value instanceof Date) {
       dDate = value;
-    } else if (value instanceof String) {
+    } else if (value instanceof String || typeof(value) === 'string') {
       dDate = new Date(value);
     } else {
       return value;
     }
 
-    if (typeof options === 'string') {
+    if (options instanceof String || typeof options === 'string') {
       if (options.toLowerCase() === 'long') {
         options = this.longFormat;
       } else if (options.toLowerCase() === 'shortdate') {

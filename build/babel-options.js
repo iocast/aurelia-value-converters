@@ -1,6 +1,6 @@
 var path = require('path');
 
-exports.base = function() {
+exports.base = function () {
   return {
     filename: '',
     filenameRelative: '',
@@ -11,35 +11,49 @@ exports.base = function() {
     comments: false,
     compact: false,
     code: true,
-    presets: [['es2015', { loose: true }], 'stage-1'],
+    presets: [
+      // Sidenote, if no targets are specified, @babel/preset-env will transform all ECMAScript 2015+ code by default
+      '@babel/preset-env'
+    ],
     plugins: [
-      'syntax-flow',
-      'transform-decorators-legacy',
-      'transform-flow-strip-types'
+      '@babel/plugin-syntax-flow',
+      '@babel/plugin-transform-flow-strip-types',
+      ['@babel/plugin-proposal-decorators', { 'legacy': true }],
+      ['@babel/plugin-proposal-class-properties', { 'loose': false }],
+      '@babel/plugin-syntax-dynamic-import'
     ]
   };
 };
 
-exports.commonjs = function() {
+exports.commonjs = function () {
   var options = exports.base();
-  options.plugins.push('transform-es2015-modules-commonjs');
+  options.plugins.push('@babel/plugin-transform-modules-commonjs');
   return options;
 };
 
-exports.amd = function() {
+exports.amd = function () {
   var options = exports.base();
-  options.plugins.push('transform-es2015-modules-amd');
+  options.plugins.push('@babel/plugin-transform-modules-amd');
   return options;
 };
 
-exports.system = function() {
+exports.system = function () {
   var options = exports.base();
-  options.plugins.push('transform-es2015-modules-systemjs');
+  options.plugins.push('@babel/plugin-transform-modules-systemjs');
   return options;
 };
 
-exports.es2015 = function() {
+exports.es2015 = function () {
   var options = exports.base();
-  options.presets = ['stage-1'];
+  /*
+  options.plugins = [
+    '@babel/plugin-proposal-export-default-from',
+    '@babel/plugin-proposal-logical-assignment-operators',
+    ['@babel/plugin-proposal-optional-chaining', { 'loose': false }],
+    ['@babel/plugin-proposal-pipeline-operator', { 'proposal': 'minimal' }],
+    ['@babel/plugin-proposal-nullish-coalescing-operator', { 'loose': false }],
+    '@babel/plugin-proposal-do-expressions'
+  ];
+  */
   return options;
 };
